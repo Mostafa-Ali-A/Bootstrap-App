@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+
+		<!-- Meta here -->
 		<meta charset="utf-8" />
 		<meta
 			http-equiv="X-UA-Compatible"
@@ -8,12 +10,18 @@
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1" />
-		<meta
+			<meta
 			name="description"
-			content="Author: Mostafa,
-			Goals of the App: A Web Page Consists of Three Sections, a Navbar, and a Grid System with a Menu with Buttons to Jump to the Part of the Page those Sections Correspond to Different Layouts for Desktop, Tablet, and Mobile Devices" />
-		<title>Assignment 3</title>
+			content="Bootstrap App" />
+		<meta
+			name="author"
+			content="Mostafa Ali" />
+		<title>Bootstrap-App</title>
+
 		<!-- CSS here -->
+		<link
+			rel="icon"
+			href="images/favicon.png">
 		<link
 			rel="stylesheet"
 			href="css/bootstrap.min.css" />
@@ -22,9 +30,10 @@
 			href="css/styles.css" />
 	</head>
 	<body>
+
 		<!-- header -->
 		<header>
-			<nav class="navbar navbar-expand-sm navbar-light bg-light">
+			<div class="navbar navbar-expand-sm navbar-light bg-light">
 				<div class="container-fluid nav-0">
 					<h1 class="navbar-brand">Food,LLC</h1>
 					<button
@@ -37,7 +46,7 @@
 						aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div
+					<nav
 						class="collapse navbar-collapse"
 						id="navbarNavDropdown">
 						<ul class="navbar-nav">
@@ -66,18 +75,19 @@
 								>
 							</li>
 						</ul>
-					</div>
+					</nav>
 				</div>
-			</nav>
+			</div>
 		</header>
 		<!-- header -->
 
 		<!-- Main Content -->
+		<main>
 		<h2>Our Menu</h2>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4 col-sm-6 main">
-					<div class="main-0">
+				<section class="col-md-4 col-sm-6 main">
+					<article class="main-0">
 						<h3 id="1">Chicken</h3>
 						<p>
 							lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -88,10 +98,10 @@
 								>Back To Top</a
 							>
 						</p>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6 main">
-					<div class="main-0">
+					</article>
+				</section>
+				<section class="col-md-4 col-sm-6 main">
+					<article class="main-0">
 						<h3 id="2">Beef</h3>
 						<p>
 							lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -102,10 +112,10 @@
 								>Back To Top</a
 							>
 						</p>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-12 main">
-					<div class="main-0">
+					</article>
+				</section>
+				<section class="col-md-4 col-sm-12 main">
+					<article class="main-0">
 						<h3 id="3">Sushi</h3>
 						<p>
 							lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad
@@ -116,10 +126,11 @@
 								>Back To Top</a
 							>
 						</p>
-					</div>
-				</div>
+					</article>
+				</section>
 			</div>
 		</div>
+	</main>
 		<!-- Main Content -->
 
 		<!-- JS here -->
